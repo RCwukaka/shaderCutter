@@ -1,0 +1,13 @@
+
+.plastic
+.vs
+Library
+Logs/Packages-Update.log
+.vsconfig
+Assembly-CSharp.csproj
+ignore.conf
+Logs
+ProjectSettings
+UserSettings
+obj
+My project.sln
