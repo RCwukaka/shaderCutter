@@ -99,7 +99,7 @@ public class TempMesh
     /// <summary>
     /// Add a completely new triangle to the mesh
     /// </summary>
-    public void AddTriangle(Vector3[] points, Color[] colors)
+    public void AddTriangle(Vector3[] points, Vector2[] uvs)
     {
         // Compute normal
         Vector3 normal = Vector3.Cross(points[1] - points[0], points[2] - points[1]).normalized;
@@ -107,7 +107,7 @@ public class TempMesh
         for (int i = 0; i < 3; ++i)
         {
             // TODO: Compute uv values for the new triangle?
-            AddPoint(points[i], normal, Vector2.zero, colors[i]);
+            AddPoint(points[i], normal, uvs[i], Color.white);
         }
 
         //Compute triangle area
